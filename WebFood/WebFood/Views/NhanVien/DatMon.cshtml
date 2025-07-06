@@ -1,0 +1,168 @@
+@model List<SanPham>
+@{
+    ViewData["Title"] = "Đặt Món";
+    var soBan = ViewBag.SoBan;
+    var danhMucs = ViewBag.DanhMucs as List<DanhMuc>;
+    
+    // Lấy thông tin giỏ hàng từ session
+    var hoaDon = Context.Session.GetJson<WebFood.Controllers.HoaDonViewModel>($"HoaDon_Ban_{soBan}");
+    var soLuongMon = hoaDon != null ? hoaDon.ChiTietHoaDon.Sum(i => i.SoLuong) : 0;
+    var tongTien = hoaDon != null ? hoaDon.TongTien : 0;
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Đặt Món - Bàn @soBan</h1>
+        <div>
+            <a asp-controller="NhanVien" asp-action="XemHoaDon" asp-route-soBan="@soBan" class="btn btn-primary me-2">
+                <i class="bi bi-receipt"></i> Xem hóa đơn
+                @if (soLuongMon > 0)
+                {
+                    <span class="badge bg-danger ms-1">@soLuongMon</span>
+                }
+            </a>
+            <a asp-controller="NhanVien" asp-action="DanhSachBan" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
+
+    @if (soLuongMon > 0)
+    {
+        <div class="alert alert-info d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <strong>Giỏ hàng hiện tại:</strong> @soLuongMon món - <span class="text-danger fw-bold">@tongTien.ToString("N0") VNĐ</span>
+            </div>
+            <a asp-controller="NhanVien" asp-action="XemHoaDon" asp-route-soBan="@soBan" class="btn btn-sm btn-primary">
+                Xem chi tiết và thanh toán
+            </a>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="list-group sticky-top" style="top: 1rem;">
+                <a href="#all" class="list-group-item list-group-item-action active">Tất cả món</a>
+                @foreach (var danhMuc in danhMucs)
+                {
+                    <a href="#category-@danhMuc.Id" class="list-group-item list-group-item-action">@danhMuc.Ten</a>
+                }
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div id="all" class="mb-4">
+                <h2 class="mb-3">Tất cả món</h2>
+                <div class="row g-3">
+                    @foreach (var sanPham in Model)
+                    {
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card h-100 shadow-sm">
+                                @if (!string.IsNullOrEmpty(sanPham.HinhAnh))
+                                {
+                                    <img src="@sanPham.HinhAnh" class="card-img-top" alt="@sanPham.Ten" style="height: 150px; object-fit: cover;">
+                                }
+                                else
+                                {
+                                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=150&q=80" 
+                                         class="card-img-top" alt="@sanPham.Ten" style="height: 150px; object-fit: cover;">
+                                }
+                                <div class="card-body">
+                                    <h5 class="card-title">@sanPham.Ten</h5>
+                                    <p class="card-text text-danger fw-bold">@sanPham.Gia.ToString("N0") VNĐ</p>
+                                    <form asp-controller="NhanVien" asp-action="ThemVaoHoaDon" method="post">
+                                        <input type="hidden" name="soBan" value="@soBan" />
+                                        <input type="hidden" name="sanPhamId" value="@sanPham.Id" />
+                                        <input type="hidden" name="stayOnPage" value="true" />
+                                        <div class="input-group mb-3">
+                                            <input type="number" name="soLuong" class="form-control" value="1" min="1" max="10">
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="bi bi-plus-lg"></i> Thêm
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            @foreach (var danhMuc in danhMucs)
+            {
+                var sanPhamTheoDanhMuc = Model.Where(s => s.DanhMucId == danhMuc.Id).ToList();
+                if (sanPhamTheoDanhMuc.Any())
+                {
+                    <div id="category-@danhMuc.Id" class="mb-4">
+                        <h2 class="mb-3">@danhMuc.Ten</h2>
+                        <div class="row g-3">
+                            @foreach (var sanPham in sanPhamTheoDanhMuc)
+                            {
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card h-100 shadow-sm">
+                                        @if (!string.IsNullOrEmpty(sanPham.HinhAnh))
+                                        {
+                                            <img src="@sanPham.HinhAnh" class="card-img-top" alt="@sanPham.Ten" style="height: 150px; object-fit: cover;">
+                                        }
+                                        else
+                                        {
+                                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=150&q=80" 
+                                                 class="card-img-top" alt="@sanPham.Ten" style="height: 150px; object-fit: cover;">
+                                        }
+                                        <div class="card-body">
+                                            <h5 class="card-title">@sanPham.Ten</h5>
+                                            <p class="card-text text-danger fw-bold">@sanPham.Gia.ToString("N0") VNĐ</p>
+                                            <form asp-controller="NhanVien" asp-action="ThemVaoHoaDon" method="post">
+                                                <input type="hidden" name="soBan" value="@soBan" />
+                                                <input type="hidden" name="sanPhamId" value="@sanPham.Id" />
+                                                <input type="hidden" name="stayOnPage" value="true" />
+                                                <div class="input-group mb-3">
+                                                    <input type="number" name="soLuong" class="form-control" value="1" min="1" max="10">
+                                                    <button type="submit" class="btn btn-primary">
+                                                        <i class="bi bi-plus-lg"></i> Thêm
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Kích hoạt scrollspy cho danh mục
+        document.addEventListener('DOMContentLoaded', function() {
+            const listItems = document.querySelectorAll('.list-group-item');
+            
+            listItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Xóa active class từ tất cả các item
+                    listItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Thêm active class cho item được click
+                    this.classList.add('active');
+                    
+                    // Scroll đến phần tương ứng
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+} 

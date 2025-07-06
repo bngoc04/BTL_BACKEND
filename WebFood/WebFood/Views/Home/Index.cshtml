@@ -1,0 +1,308 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content animate__animated animate__fadeInLeft">
+                <h1 class="hero-title">Chào mừng bạn đến với <br><span class="text-primary">Quán Ăn Bé Ngọc</span></h1>
+                <p class="hero-text">Khám phá thế giới ẩm thực đa dạng với các món ăn được chế biến từ những nguyên liệu tươi ngon nhất, mang đến trải nghiệm ẩm thực tuyệt vời cho bạn.</p>
+                <div class="d-flex gap-3 mt-4">
+                    <a asp-controller="SanPham" asp-action="Index" class="btn btn-primary btn-lg animate__animated animate__pulse animate__infinite animate__slower">
+                        <i class="bi bi-cup-hot me-2"></i> Xem thực đơn
+                    </a>
+                    <a asp-controller="DatBan" asp-action="Index" class="btn btn-outline-primary btn-lg">
+                        <i class="bi bi-calendar-heart me-2"></i> Đặt bàn ngay
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block animate__animated animate__fadeInRight">
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80" 
+                         class="img-fluid rounded-4 shadow-lg" alt="Delicious Food" style="object-fit: cover;">
+                    <div class="position-absolute top-0 start-100 translate-middle animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="bg-white rounded-circle shadow-lg p-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                            <div class="text-center">
+                                <div class="text-primary fw-bold fs-4">30%</div>
+                                <div class="small">Giảm giá</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-0 start-0 translate-middle animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="bg-white rounded-circle shadow-lg p-3 d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                            <div class="text-center">
+                                <i class="bi bi-star-fill text-warning fs-3"></i>
+                                <div class="text-primary fw-bold fs-4">4.9</div>
+                                <div class="small">Đánh giá</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Tại sao chọn <span class="text-primary">Quán Ăn Bé Ngọc</span>?</h2>
+        <div class="divider"></div>
+        <p class="lead">Chúng tôi cam kết mang đến trải nghiệm ẩm thực tuyệt vời nhất cho bạn</p>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-md-4 mb-4">
+            <div class="feature-box animate__animated animate__fadeInUp">
+                <span class="feature-icon animate__animated animate__heartBeat animate__infinite animate__slow">
+                    <i class="bi bi-truck text-primary"></i>
+                </span>
+                <h3 class="h4 fw-bold mt-3">Giao hàng nhanh chóng</h3>
+                <p class="text-muted">Chúng tôi cam kết giao hàng trong vòng 30 phút kể từ khi đặt hàng trong phạm vi 5km.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="feature-box animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="feature-icon animate__animated animate__heartBeat animate__infinite animate__slow">
+                    <i class="bi bi-star text-primary"></i>
+                </span>
+                <h3 class="h4 fw-bold mt-3">Chất lượng hàng đầu</h3>
+                <p class="text-muted">Sử dụng nguyên liệu tươi ngon, đảm bảo vệ sinh an toàn thực phẩm cho từng món ăn.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="feature-box animate__animated animate__fadeInUp animate__delay-2s">
+                <span class="feature-icon animate__animated animate__heartBeat animate__infinite animate__slow">
+                    <i class="bi bi-wallet2 text-primary"></i>
+                </span>
+                <h3 class="h4 fw-bold mt-3">Giá cả hợp lý</h3>
+                <p class="text-muted">Mang đến trải nghiệm ẩm thực tuyệt vời với mức giá phải chăng và nhiều ưu đãi.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Categories Section -->
+<div class="container mt-5 py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Khám phá <span class="text-primary">Danh mục</span></h2>
+        <div class="divider"></div>
+        <p class="lead">Đa dạng các món ăn phù hợp với mọi khẩu vị</p>
+    </div>
+    
+    <div class="row g-4">
+        @if (ViewBag.DanhMucs != null && ViewBag.DanhMucs.Count > 0)
+        {
+            @foreach (var danhMuc in ViewBag.DanhMucs)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card category-card h-100 border-0 shadow hover-grow animate__animated animate__fadeIn">
+                        <div class="card-body text-center p-4">
+                            <div class="category-icon bg-primary-light rounded-circle mx-auto mb-4 animate__animated animate__pulse animate__infinite animate__slow">
+                                <i class="bi bi-grid-fill fs-1 text-primary p-3"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">@danhMuc.Ten</h3>
+                            <p class="text-muted mb-4">@(string.IsNullOrEmpty(danhMuc.MoTa) ? "Khám phá các món ăn trong danh mục này" : danhMuc.MoTa)</p>
+                            <a asp-controller="SanPham" asp-action="Index" asp-route-danhMucId="@danhMuc.Id" class="btn btn-outline-primary">
+                                <i class="bi bi-arrow-right me-2"></i> Xem ngay
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12 text-center">
+                <p>Không có danh mục nào.</p>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Featured Products Section -->
+<div class="container mt-5 py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Món ăn <span class="text-primary">Nổi bật</span></h2>
+        <div class="divider"></div>
+        <p class="lead">Những món ăn được yêu thích nhất tại Quán Ăn Bé Ngọc</p>
+    </div>
+    
+    <div class="row g-4">
+        @if (ViewBag.SanPhamMoiNhat != null && ViewBag.SanPhamMoiNhat.Count > 0)
+        {
+            @foreach (var sanPham in ViewBag.SanPhamMoiNhat)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card h-100 border-0 shadow hover-grow animate__animated animate__fadeIn">
+                        <div class="img-hover-zoom">
+                            @if (!string.IsNullOrEmpty(sanPham.HinhAnh))
+                            {
+                                <img src="@sanPham.HinhAnh" class="card-img-top" alt="@sanPham.Ten" style="height: 200px; object-fit: cover;">
+                            }
+                            else
+                            {
+                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200&q=80" 
+                                     class="card-img-top" alt="@sanPham.Ten" style="height: 200px; object-fit: cover;">
+                            }
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">@sanPham.Ten</h5>
+                            <p class="card-text text-muted text-truncate">@(string.IsNullOrEmpty(sanPham.MoTa) ? "Không có mô tả" : sanPham.MoTa)</p>
+                            <div class="price-tag mt-2 mb-3">@sanPham.Gia.ToString("N0") VNĐ</div>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between">
+                                    <a asp-controller="SanPham" asp-action="ChiTiet" asp-route-id="@sanPham.Id" class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-info-circle me-1"></i> Chi tiết
+                                    </a>
+                                    <form asp-controller="SanPham" asp-action="ThemVaoGioHang" method="post">
+                                        <input type="hidden" name="sanPhamId" value="@sanPham.Id" />
+                                        <input type="hidden" name="soLuong" value="1" />
+                                        <button type="submit" class="btn btn-sm btn-primary">
+                                            <i class="bi bi-cart-plus me-1"></i> Thêm vào giỏ
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12 text-center">
+                <p>Không có sản phẩm nào.</p>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="container mt-5 py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Khách hàng <span class="text-primary">Nói gì</span></h2>
+        <div class="divider"></div>
+        <p class="lead">Phản hồi từ những khách hàng đã trải nghiệm dịch vụ của Quán Ăn Bé Ngọc</p>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-md-4 mb-4">
+            <div class="card testimonial-card h-100 border-0 shadow hover-grow animate__animated animate__fadeIn">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="testimonial-avatar" width="60" height="60">
+                        <div>
+                            <h5 class="mb-0 fw-bold">Nguyễn Thị Hương</h5>
+                            <small class="text-muted">Khách hàng thân thiết</small>
+                        </div>
+                    </div>
+                    <p class="card-text">"Món ăn ngon, giao hàng nhanh, đóng gói cẩn thận. Tôi rất hài lòng với dịch vụ của WebFood và sẽ tiếp tục ủng hộ!"</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card testimonial-card h-100 border-0 shadow hover-grow animate__animated animate__fadeIn animate__delay-1s">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Customer" class="testimonial-avatar" width="60" height="60">
+                        <div>
+                            <h5 class="mb-0 fw-bold">Trần Văn Nam</h5>
+                            <small class="text-muted">Khách hàng mới</small>
+                        </div>
+                    </div>
+                    <p class="card-text">"Lần đầu đặt hàng nhưng rất ấn tượng với chất lượng món ăn. Giá cả hợp lý, phục vụ tận tình. Chắc chắn sẽ quay lại!"</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card testimonial-card h-100 border-0 shadow hover-grow animate__animated animate__fadeIn animate__delay-2s">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="testimonial-avatar" width="60" height="60">
+                        <div>
+                            <h5 class="mb-0 fw-bold">Lê Thị Minh</h5>
+                            <small class="text-muted">Khách hàng thường xuyên</small>
+                        </div>
+                    </div>
+                    <p class="card-text">"Đặt hàng mỗi tuần và chưa bao giờ thất vọng. Món nào cũng ngon, nhân viên giao hàng lịch sự. Rất hài lòng!"</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="container mt-5 py-5">
+    <div class="card border-0 bg-gradient-primary text-white shadow-lg animate__animated animate__fadeIn">
+        <div class="card-body p-5 text-center">
+            <h2 class="fw-bold mb-4">Sẵn sàng đặt món?</h2>
+            <p class="lead mb-4">Khám phá thực đơn đa dạng của chúng tôi và đặt hàng ngay hôm nay!</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a asp-controller="SanPham" asp-action="Index" class="btn btn-light btn-lg animate__animated animate__pulse animate__infinite animate__slower">
+                    <i class="bi bi-cup-hot me-2"></i> Xem thực đơn
+                </a>
+                <a asp-controller="DatBan" asp-action="Index" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-calendar-heart me-2"></i> Đặt bàn
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <style>
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .feature-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        
+        .category-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+    </style>
+}

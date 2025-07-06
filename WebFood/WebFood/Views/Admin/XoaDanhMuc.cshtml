@@ -1,0 +1,41 @@
+@model WebFood.Models.DanhMuc
+@{
+    ViewData["Title"] = "Xóa danh mục";
+}
+
+<div class="container">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+    
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 bg-danger text-white">
+            <h6 class="m-0 font-weight-bold">Xác nhận xóa</h6>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-warning">
+                <h5>Bạn có chắc chắn muốn xóa danh mục này?</h5>
+                <p>Việc xóa có thể ảnh hưởng đến các sản phẩm thuộc danh mục này.</p>
+            </div>
+            
+            <dl class="row">
+                <dt class="col-sm-2">ID:</dt>
+                <dd class="col-sm-10">@Model.Id</dd>
+                
+                <dt class="col-sm-2">Tên danh mục:</dt>
+                <dd class="col-sm-10">@Model.Ten</dd>
+                
+                <dt class="col-sm-2">Mô tả:</dt>
+                <dd class="col-sm-10">@(string.IsNullOrEmpty(Model.MoTa) ? "Không có mô tả" : Model.MoTa)</dd>
+            </dl>
+            
+            <form asp-action="XoaDanhMuc" method="post">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">
+                    <i class="bi bi-trash"></i> Xác nhận xóa
+                </button>
+                <a asp-action="QuanLyDanhMuc" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Quay lại
+                </a>
+            </form>
+        </div>
+    </div>
+</div> 

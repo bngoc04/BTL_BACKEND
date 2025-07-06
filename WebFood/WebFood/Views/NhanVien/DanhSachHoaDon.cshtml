@@ -1,0 +1,88 @@
+@model IEnumerable<DonHang>
+@{
+    ViewData["Title"] = "Danh Sách Hóa Đơn";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Danh Sách Hóa Đơn</h1>
+        <a asp-controller="NhanVien" asp-action="Index" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left"></i> Quay lại
+        </a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Hóa đơn đã thanh toán</h5>
+        </div>
+        <div class="card-body">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Mã HĐ</th>
+                                <th>Khách hàng</th>
+                                <th>Thời gian</th>
+                                <th class="text-center">Trạng thái</th>
+                                <th class="text-end">Tổng tiền</th>
+                                <th class="text-center">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var donHang in Model)
+                            {
+                                <tr>
+                                    <td>@donHang.Id</td>
+                                    <td>@donHang.TenKhachHang</td>
+                                    <td>@donHang.NgayDat.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td class="text-center">
+                                        @{
+                                            var badgeClass = "badge ";
+                                            switch (donHang.TrangThai)
+                                            {
+                                                case TrangThaiDonHang.ChoXacNhan:
+                                                    badgeClass += "bg-warning";
+                                                    break;
+                                                case TrangThaiDonHang.DaXacNhan:
+                                                    badgeClass += "bg-info";
+                                                    break;
+                                                case TrangThaiDonHang.DangChuanBi:
+                                                    badgeClass += "bg-primary";
+                                                    break;
+                                                case TrangThaiDonHang.DangGiaoHang:
+                                                    badgeClass += "bg-primary";
+                                                    break;
+                                                case TrangThaiDonHang.DaGiaoHang:
+                                                    badgeClass += "bg-success";
+                                                    break;
+                                                case TrangThaiDonHang.DaHuy:
+                                                    badgeClass += "bg-danger";
+                                                    break;
+                                            }
+                                        }
+                                        <span class="@badgeClass">@donHang.TrangThai.ToString()</span>
+                                    </td>
+                                    <td class="text-end">@donHang.TongTien.ToString("N0") VNĐ</td>
+                                    <td class="text-center">
+                                        <a asp-controller="NhanVien" asp-action="ChiTietHoaDon" asp-route-id="@donHang.Id" class="btn btn-sm btn-outline-primary">
+                                            <i class="bi bi-eye"></i> Chi tiết
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-receipt fs-1 text-muted mb-3"></i>
+                    <p class="lead">Chưa có hóa đơn nào</p>
+                </div>
+            }
+        </div>
+    </div>
+</div> 

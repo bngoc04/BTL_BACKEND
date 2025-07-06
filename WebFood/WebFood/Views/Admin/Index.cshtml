@@ -1,0 +1,179 @@
+@{
+    ViewData["Title"] = "Bảng điều khiển";
+}
+
+<div class="container mt-4">
+    <h2>Bảng điều khiển quản trị</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Quản lý người dùng</h5>
+                            <p class="card-text">Quản lý tài khoản và phân quyền</p>
+                        </div>
+                        <i class="bi bi-people-fill fs-1"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a asp-action="QuanLyNguoiDung" class="text-white text-decoration-none">Xem chi tiết</a>
+                    <i class="bi bi-arrow-right-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-success text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Quản lý danh mục</h5>
+                            <p class="card-text">Thêm, sửa, xóa danh mục sản phẩm</p>
+                        </div>
+                        <i class="bi bi-list-ul fs-1"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a asp-action="QuanLyDanhMuc" class="text-white text-decoration-none">Xem chi tiết</a>
+                    <i class="bi bi-arrow-right-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-warning text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Quản lý sản phẩm</h5>
+                            <p class="card-text">Thêm, sửa, xóa sản phẩm</p>
+                        </div>
+                        <i class="bi bi-box-seam fs-1"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a asp-action="QuanLySanPham" class="text-white text-decoration-none">Xem chi tiết</a>
+                    <i class="bi bi-arrow-right-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="card bg-danger text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Quản lý đơn hàng</h5>
+                            <p class="card-text">Xử lý và theo dõi đơn hàng</p>
+                        </div>
+                        <i class="bi bi-cart-check fs-1"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a asp-action="QuanLyDonHang" class="text-white text-decoration-none">Xem chi tiết</a>
+                    <i class="bi bi-arrow-right-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card bg-info text-white h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Quản lý bàn ăn</h5>
+                            <p class="card-text">Thêm, sửa, xóa bàn ăn</p>
+                        </div>
+                        <i class="bi bi-table fs-1"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a asp-action="QuanLyBanAn" class="text-white text-decoration-none">Xem chi tiết</a>
+                    <i class="bi bi-arrow-right-circle text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Thống kê nhanh</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">0</h3>
+                                    <p class="card-text">Đơn hàng mới</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">0</h3>
+                                    <p class="card-text">Sản phẩm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">0</h3>
+                                    <p class="card-text">Người dùng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">0</h3>
+                                    <p class="card-text">Bàn ăn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Thông tin hệ thống</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Phiên bản hệ thống
+                            <span class="badge bg-primary rounded-pill">1.0.0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            ASP.NET Core
+                            <span class="badge bg-primary rounded-pill">8.0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Entity Framework Core
+                            <span class="badge bg-primary rounded-pill">8.0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Bootstrap
+                            <span class="badge bg-primary rounded-pill">5.3</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Ngày cập nhật
+                            <span class="badge bg-primary rounded-pill">@DateTime.Now.ToString("dd/MM/yyyy")</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

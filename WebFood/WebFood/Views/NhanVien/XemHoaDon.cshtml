@@ -1,0 +1,136 @@
+@using WebFood.Controllers
+@model HoaDonViewModel
+@{
+    ViewData["Title"] = "Hóa Đơn";
+    var soBan = ViewBag.SoBan;
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Hóa Đơn - Bàn @soBan</h1>
+        <div>
+            <a asp-controller="NhanVien" asp-action="DatMon" asp-route-soBan="@soBan" class="btn btn-primary me-2">
+                <i class="bi bi-cart-plus"></i> Đặt thêm món
+            </a>
+            <a asp-controller="NhanVien" asp-action="DanhSachBan" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Chi tiết hóa đơn</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.ChiTietHoaDon.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên món</th>
+                                        <th class="text-center">Đơn giá</th>
+                                        <th class="text-center">Số lượng</th>
+                                        <th class="text-end">Thành tiền</th>
+                                        <th class="text-center">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        int stt = 1;
+                                        foreach (var item in Model.ChiTietHoaDon)
+                                        {
+                                            <tr>
+                                                <td>@stt</td>
+                                                <td>@item.TenSanPham</td>
+                                                <td class="text-center">@item.DonGia.ToString("N0") VNĐ</td>
+                                                <td class="text-center">
+                                                    <form asp-controller="NhanVien" asp-action="CapNhatSoLuong" method="post" class="d-flex align-items-center justify-content-center">
+                                                        <input type="hidden" name="soBan" value="@soBan" />
+                                                        <input type="hidden" name="sanPhamId" value="@item.SanPhamId" />
+                                                        <div class="input-group input-group-sm" style="width: 100px;">
+                                                            <input type="number" name="soLuong" class="form-control" value="@item.SoLuong" min="1" max="10">
+                                                            <button type="submit" class="btn btn-outline-primary">
+                                                                <i class="bi bi-check"></i>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                                <td class="text-end">@item.ThanhTien.ToString("N0") VNĐ</td>
+                                                <td class="text-center">
+                                                    <form asp-controller="NhanVien" asp-action="XoaMonKhoiHoaDon" method="post">
+                                                        <input type="hidden" name="soBan" value="@soBan" />
+                                                        <input type="hidden" name="sanPhamId" value="@item.SanPhamId" />
+                                                        <button type="submit" class="btn btn-sm btn-danger">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            stt++;
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-5">
+                            <i class="bi bi-receipt fs-1 text-muted mb-3"></i>
+                            <p class="lead">Chưa có món ăn nào trong hóa đơn</p>
+                            <a asp-controller="NhanVien" asp-action="DatMon" asp-route-soBan="@soBan" class="btn btn-primary">
+                                <i class="bi bi-cart-plus"></i> Đặt món ngay
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Tổng kết</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Bàn số:</span>
+                        <strong>@soBan</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Thời gian:</span>
+                        <strong>@Model.NgayTao.ToString("dd/MM/yyyy HH:mm")</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Số món:</span>
+                        <strong>@Model.ChiTietHoaDon.Count</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Tổng số lượng:</span>
+                        <strong>@Model.ChiTietHoaDon.Sum(c => c.SoLuong)</strong>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5>Tổng tiền:</h5>
+                        <h5 class="text-danger">@Model.TongTien.ToString("N0") VNĐ</h5>
+                    </div>
+                    
+                    @if (Model.ChiTietHoaDon.Any())
+                    {
+                        <form asp-controller="NhanVien" asp-action="ThanhToan" method="post">
+                            <input type="hidden" name="soBan" value="@soBan" />
+                            <button type="submit" class="btn btn-success w-100">
+                                <i class="bi bi-cash"></i> Thanh toán
+                            </button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

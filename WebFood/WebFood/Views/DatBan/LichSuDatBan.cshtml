@@ -1,0 +1,101 @@
+@model IEnumerable<WebFood.Models.DatBan>
+
+@{
+    ViewData["Title"] = "Lịch sử đặt bàn";
+}
+
+<div class="container py-4">
+    <h1 class="mb-4">Lịch sử đặt bàn</h1>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            <h4 class="alert-heading">Bạn chưa có lịch sử đặt bàn!</h4>
+            <p>Hãy đặt bàn ngay để trải nghiệm dịch vụ của chúng tôi.</p>
+            <hr>
+            <p class="mb-0">
+                <a asp-action="Index" class="btn btn-primary">
+                    <i class="bi bi-calendar-plus"></i> Đặt bàn ngay
+                </a>
+            </p>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Bàn</th>
+                        <th>Ngày giờ đặt</th>
+                        <th>Số lượng khách</th>
+                        <th>Trạng thái</th>
+                        <th>Đơn hàng</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.BanAn?.TenBan</td>
+                            <td>@item.NgayGioDat.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@item.SoLuongKhach người</td>
+                            <td>
+                                @switch (item.TrangThai)
+                                {
+                                    case "Chờ xác nhận":
+                                        <span class="badge bg-warning text-dark">Chờ xác nhận</span>
+                                        break;
+                                    case "Đã xác nhận":
+                                        <span class="badge bg-success">Đã xác nhận</span>
+                                        break;
+                                    case "Đã hủy":
+                                        <span class="badge bg-danger">Đã hủy</span>
+                                        break;
+                                    case "Hoàn thành":
+                                        <span class="badge bg-info">Hoàn thành</span>
+                                        break;
+                                    default:
+                                        <span class="badge bg-secondary">@item.TrangThai</span>
+                                        break;
+                                }
+                            </td>
+                            <td>
+                                @if (item.DonHangId.HasValue)
+                                {
+                                    <a asp-controller="DonHang" asp-action="ChiTietDonHang" asp-route-id="@item.DonHangId" class="btn btn-sm btn-info">
+                                        <i class="bi bi-receipt"></i> Xem đơn hàng
+                                    </a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Chưa có</span>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a asp-action="ChiTiet" asp-route-id="@item.DatBanId" class="btn btn-sm btn-primary">
+                                        <i class="bi bi-info-circle"></i> Chi tiết
+                                    </a>
+                                    @if (item.TrangThai == "Chờ xác nhận")
+                                    {
+                                        <a asp-action="HuyDatBan" asp-route-id="@item.DatBanId" class="btn btn-sm btn-danger">
+                                            <i class="bi bi-x-circle"></i> Hủy
+                                        </a>
+                                    }
+                                    @if (item.TrangThai == "Đã xác nhận" && !item.DonHangId.HasValue)
+                                    {
+                                        <a asp-action="DatMonTaiBan" asp-route-id="@item.DatBanId" class="btn btn-sm btn-success">
+                                            <i class="bi bi-cart-plus"></i> Đặt món
+                                        </a>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div> 

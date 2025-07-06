@@ -1,0 +1,126 @@
+@model List<WebFood.Models.ViewModels.GioHangItem>
+
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    var datBanId = ViewBag.DatBanId;
+}
+
+<div class="container mt-4">
+    <h2>Giỏ hàng của bạn</h2>
+    
+    @if (datBanId != null)
+    {
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i> Bạn đang đặt món cho bàn đã đặt trước. Sau khi thanh toán, đơn hàng sẽ được liên kết với đặt bàn của bạn.
+        </div>
+    }
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            @if (!string.IsNullOrEmpty(item.HinhAnh))
+                                            {
+                                                <img src="@item.HinhAnh" alt="@item.TenSanPham" style="width: 50px; height: 50px; object-fit: cover;" class="me-3">
+                                            }
+                                            else
+                                            {
+                                                <img src="https://via.placeholder.com/50" alt="@item.TenSanPham" class="me-3">
+                                            }
+                                            <div>
+                                                <h6 class="mb-0">@item.TenSanPham</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>@item.DonGia.ToString("N0") VNĐ</td>
+                                    <td>
+                                        <form asp-controller="SanPham" asp-action="CapNhatGioHang" method="post" class="d-flex align-items-center">
+                                            <input type="hidden" name="sanPhamId" value="@item.SanPhamId" />
+                                            <input type="number" name="soLuong" value="@item.SoLuong" min="1" max="10" class="form-control form-control-sm" style="width: 70px;" />
+                                            <button type="submit" class="btn btn-sm btn-outline-primary ms-2">
+                                                <i class="bi bi-arrow-clockwise"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                    <td class="text-danger fw-bold">@item.ThanhTien.ToString("N0") VNĐ</td>
+                                    <td>
+                                        <form asp-controller="SanPham" asp-action="XoaKhoiGioHang" method="post">
+                                            <input type="hidden" name="sanPhamId" value="@item.SanPhamId" />
+                                            <button type="submit" class="btn btn-sm btn-danger">
+                                                <i class="bi bi-trash"></i> Xóa
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-end fw-bold">Tổng cộng:</td>
+                                <td class="text-danger fw-bold fs-5">@Model.Sum(i => i.ThanhTien).ToString("N0") VNĐ</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3">
+                    @if (datBanId != null)
+                    {
+                        <a asp-controller="DatBan" asp-action="ChiTiet" asp-route-id="@datBanId" class="btn btn-outline-primary">
+                            <i class="bi bi-arrow-left"></i> Quay lại thông tin đặt bàn
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-controller="SanPham" asp-action="Index" class="btn btn-outline-primary">
+                            <i class="bi bi-arrow-left"></i> Tiếp tục mua hàng
+                        </a>
+                    }
+                    <a asp-controller="DonHang" asp-action="ThanhToan" class="btn btn-success">
+                        <i class="bi bi-credit-card"></i> Tiến hành thanh toán
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="card">
+            <div class="card-body text-center py-5">
+                <i class="bi bi-cart-x fs-1 text-muted"></i>
+                <h4 class="mt-3">Giỏ hàng của bạn đang trống</h4>
+                <p class="text-muted">Hãy thêm sản phẩm vào giỏ hàng để tiến hành đặt hàng.</p>
+                @if (datBanId != null)
+                {
+                    <a asp-controller="DatBan" asp-action="ChiTiet" asp-route-id="@datBanId" class="btn btn-primary mt-3">
+                        <i class="bi bi-arrow-left"></i> Quay lại thông tin đặt bàn
+                    </a>
+                }
+                else
+                {
+                    <a asp-controller="SanPham" asp-action="Index" class="btn btn-primary mt-3">
+                        <i class="bi bi-arrow-left"></i> Quay lại mua hàng
+                    </a>
+                }
+            </div>
+        </div>
+    }
+</div> 

@@ -1,0 +1,81 @@
+@model IEnumerable<WebFood.Models.SanPham>
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+
+<div class="container">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+    
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 d-flex justify-content-between align-items-center">
+            <h6 class="m-0 font-weight-bold">Danh sách sản phẩm</h6>
+            <a asp-action="ThemSanPham" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Thêm sản phẩm mới
+            </a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Hình ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Danh mục</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(item.HinhAnh))
+                                    {
+                                        <img src="@item.HinhAnh" alt="@item.Ten" style="max-width: 50px; max-height: 50px;" />
+                                    }
+                                    else
+                                    {
+                                        <span>Không có hình</span>
+                                    }
+                                </td>
+                                <td>@item.Ten</td>
+                                <td>@item.Gia.ToString("N0") VNĐ</td>
+                                <td>@(item.DanhMuc?.Ten ?? "Không có danh mục")</td>
+                                <td>
+                                    @if (item.ConHang)
+                                    {
+                                        <span class="badge bg-success">Còn hàng</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">Hết hàng</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="SuaSanPham" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                                        <i class="bi bi-pencil"></i> Sửa
+                                    </a>
+                                    <a asp-action="XoaSanPham" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+        });
+    </script>
+} 

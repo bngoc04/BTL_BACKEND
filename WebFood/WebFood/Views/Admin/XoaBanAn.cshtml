@@ -1,0 +1,60 @@
+@model WebFood.Models.BanAn
+
+@{
+    ViewData["Title"] = "Xóa bàn ăn";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">Xác nhận xóa bàn ăn</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <i class="bi bi-exclamation-triangle-fill"></i> Bạn có chắc chắn muốn xóa bàn ăn này không? Hành động này không thể hoàn tác.
+                    </div>
+                    
+                    <dl class="row">
+                        <dt class="col-sm-3">ID:</dt>
+                        <dd class="col-sm-9">@Model.BanAnId</dd>
+                        
+                        <dt class="col-sm-3">Tên bàn:</dt>
+                        <dd class="col-sm-9">@Model.TenBan</dd>
+                        
+                        <dt class="col-sm-3">Số chỗ ngồi:</dt>
+                        <dd class="col-sm-9">@Model.SoLuongChoNgoi</dd>
+                        
+                        <dt class="col-sm-3">Trạng thái:</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.DaDat)
+                            {
+                                <span class="badge bg-danger">Đã đặt</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success">Trống</span>
+                            }
+                        </dd>
+                        
+                        <dt class="col-sm-3">Mô tả:</dt>
+                        <dd class="col-sm-9">@Model.MoTa</dd>
+                    </dl>
+                    
+                    <form asp-action="XoaBanAn" method="post">
+                        <input type="hidden" asp-for="BanAnId" />
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="QuanLyBanAn" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Quay lại
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Xác nhận xóa
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

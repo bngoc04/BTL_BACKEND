@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebFood.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                @if (User.Identity != null && User.IsInRole("Admin"))
+                {
+                    <a class="navbar-brand animate__animated animate__fadeIn" asp-area="" asp-controller="Admin" asp-action="Index">
+                        <i class="bi bi-gem me-2"></i>WebFood Admin
+                    </a>
+                }
+                else if (User.Identity != null && User.IsInRole("NhanVien"))
+                {
+                    <a class="navbar-brand animate__animated animate__fadeIn" asp-area="" asp-controller="NhanVien" asp-action="Index">
+                        <i class="bi bi-shop me-2"></i>WebFood Nhân Viên
+                    </a>
+                }
+                else
+                {
+                    <a class="navbar-brand animate__animated animate__fadeIn" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="bi bi-cup-hot me-2"></i>WebFood
+                    </a>
+                }
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav me-auto">
+                        @if (User.Identity != null && User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-gear-fill me-1"></i> Quản lý
+                                </a>
+                                <ul class="dropdown-menu animate__animated animate__fadeIn" aria-labelledby="adminDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="Index"><i class="bi bi-speedometer2 me-2"></i>Bảng điều khiển</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="QuanLyNguoiDung"><i class="bi bi-people me-2"></i>Người dùng</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="QuanLyDanhMuc"><i class="bi bi-list-ul me-2"></i>Danh mục</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="QuanLySanPham"><i class="bi bi-box me-2"></i>Sản phẩm</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="QuanLyDonHang"><i class="bi bi-bag me-2"></i>Đơn hàng</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="QuanLyBanAn"><i class="bi bi-table me-2"></i>Bàn ăn</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="ThongTinCaNhan">
+                                    <i class="bi bi-person"></i> Cá nhân
+                                </a>
+                            </li>
+                        }
+                        else if (User.Identity != null && User.IsInRole("NhanVien"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="NhanVien" asp-action="Index">
+                                    <i class="bi bi-speedometer2"></i> Tổng quan
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="SanPham" asp-action="Index">
+                                    <i class="bi bi-menu-button-wide"></i> Thực đơn
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="nhanvienDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-table me-1"></i> Quản lý
+                                </a>
+                                <ul class="dropdown-menu animate__animated animate__fadeIn" aria-labelledby="nhanvienDropdown">
+                                    <li><a class="dropdown-item" asp-controller="NhanVien" asp-action="DanhSachBan"><i class="bi bi-table me-2"></i>Quản lý bàn</a></li>
+                                    <li><a class="dropdown-item" asp-controller="NhanVien" asp-action="DanhSachDatBan"><i class="bi bi-calendar-check me-2"></i>Đặt bàn</a></li>
+                                    <li><a class="dropdown-item" asp-controller="NhanVien" asp-action="DanhSachHoaDon"><i class="bi bi-receipt me-2"></i>Hóa đơn</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="ThongTinCaNhan">
+                                    <i class="bi bi-person"></i> Cá nhân
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                    <i class="bi bi-house-heart me-1"></i> Trang chủ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="SanPham" asp-action="Index">
+                                    <i class="bi bi-cup-hot me-1"></i> Thực đơn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="DatBan" asp-action="Index">
+                                    <i class="bi bi-calendar-heart me-1"></i> Đặt bàn
+                                </a>
+                            </li>
+                            @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("KhachHang"))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="khachHangDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-person-heart me-1"></i> Tài khoản
+                                    </a>
+                                    <ul class="dropdown-menu animate__animated animate__fadeIn" aria-labelledby="khachHangDropdown">
+                                        <li><a class="dropdown-item" asp-controller="Account" asp-action="ThongTinCaNhan"><i class="bi bi-person me-2"></i>Thông tin cá nhân</a></li>
+                                        <li><a class="dropdown-item" asp-controller="DonHang" asp-action="LichSuDonHang"><i class="bi bi-clock-history me-2"></i>Lịch sử đơn hàng</a></li>
+                                        <li><a class="dropdown-item" asp-controller="DatBan" asp-action="LichSuDatBan"><i class="bi bi-calendar-check me-2"></i>Lịch sử đặt bàn</a></li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle me-1"></i> @User.Identity.Name
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Account" asp-action="ThongTinCaNhan">
+                                        <i class="bi bi-person me-2"></i>Thông tin cá nhân</a>
+                                    </li>
+                                    <li><a class="dropdown-item" asp-controller="Account" asp-action="DoiMatKhau">
+                                        <i class="bi bi-key me-2"></i>Đổi mật khẩu</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form asp-controller="Account" asp-action="DangXuat" method="post">
+                                            <button type="submit" class="dropdown-item">
+                                                <i class="bi bi-box-arrow-right me-2"></i> Đăng xuất
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="DangNhap">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Đăng nhập
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="DangKy">
+                                    <i class="bi bi-person-plus me-1"></i> Đăng ký
+                                </a>
+                            </li>
+                        }
+                        @if (User.Identity == null || !User.IsInRole("Admin") && !User.IsInRole("NhanVien"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link position-relative" asp-controller="SanPham" asp-action="GioHang">
+                                    <i class="bi bi-cart3 me-1"></i> Giỏ hàng
+                                    @{
+                                        var gioHang = Context.Session.GetJson<List<WebFood.Models.ViewModels.GioHangItem>>("GioHang");
+                                        var soLuong = gioHang != null ? gioHang.Sum(i => i.SoLuong) : 0;
+                                    }
+                                    @if (soLuong > 0)
+                                    {
+                                        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle animate__animated animate__heartBeat animate__infinite">@soLuong</span>
+                                    }
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container mt-4 mb-5">
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show animate__animated animate__fadeIn" role="alert">
+                <i class="bi bi-check-circle me-2"></i> @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show animate__animated animate__fadeIn" role="alert">
+                <i class="bi bi-exclamation-triangle me-2"></i> @TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show animate__animated animate__fadeIn" role="alert">
+                <i class="bi bi-check-circle me-2"></i> @TempData["SuccessMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show animate__animated animate__fadeIn" role="alert">
+                <i class="bi bi-exclamation-triangle me-2"></i> @TempData["ErrorMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (TempData["ThanhToanThanhCong"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show animate__animated animate__fadeIn" role="alert">
+                <i class="bi bi-check-circle me-2"></i> @TempData["ThanhToanThanhCong"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Initialize animations
+        $(document).ready(function() {
+            // Add hover effects to buttons
+            $('.btn').addClass('hover-grow');
+            
+            // Add fade-in animation to cards
+            $('.card').addClass('animate__animated animate__fadeIn');
+            
+            // Add pulse animation to important buttons
+            $('.btn-primary, .btn-success').addClass('animate__animated animate__pulse animate__delay-1s');
+            
+            // Add active class to current nav item
+            const currentPath = window.location.pathname.toLowerCase();
+            $('.navbar-nav .nav-link').each(function() {
+                const linkPath = $(this).attr('href')?.toLowerCase() || '';
+                if (currentPath === linkPath || 
+                    (currentPath.includes(linkPath) && linkPath !== '/')) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,97 @@
+@model IEnumerable<WebFood.Models.DonHang>
+
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+}
+
+<div class="container mt-4">
+    <h2>Quản lý đơn hàng</h2>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Danh sách đơn hàng</h5>
+        </div>
+        <div class="card-body">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover" id="donHangTable">
+                        <thead>
+                            <tr>
+                                <th>Mã đơn</th>
+                                <th>Khách hàng</th>
+                                <th>Ngày đặt</th>
+                                <th>Tổng tiền</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>#@item.Id</td>
+                                    <td>@item.TenKhachHang</td>
+                                    <td>@item.NgayDat.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td class="text-danger fw-bold">@item.TongTien.ToString("N0") VNĐ</td>
+                                    <td>
+                                        @switch (item.TrangThai)
+                                        {
+                                            case WebFood.Models.TrangThaiDonHang.ChoXacNhan:
+                                                <span class="badge bg-warning">Chờ xác nhận</span>
+                                                break;
+                                            case WebFood.Models.TrangThaiDonHang.DaXacNhan:
+                                                <span class="badge bg-info">Đã xác nhận</span>
+                                                break;
+                                            case WebFood.Models.TrangThaiDonHang.DangChuanBi:
+                                                <span class="badge bg-primary">Đang chuẩn bị</span>
+                                                break;
+                                            case WebFood.Models.TrangThaiDonHang.DangGiaoHang:
+                                                <span class="badge bg-info">Đang giao hàng</span>
+                                                break;
+                                            case WebFood.Models.TrangThaiDonHang.DaGiaoHang:
+                                                <span class="badge bg-success">Đã giao hàng</span>
+                                                break;
+                                            case WebFood.Models.TrangThaiDonHang.DaHuy:
+                                                <span class="badge bg-danger">Đã hủy</span>
+                                                break;
+                                            default:
+                                                <span class="badge bg-secondary">Không xác định</span>
+                                                break;
+                                        }
+                                    </td>
+                                    <td>
+                                        <a asp-action="ChiTietDonHang" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
+                                            <i class="bi bi-info-circle"></i> Chi tiết
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-bag-x fs-1 text-muted"></i>
+                    <h4 class="mt-3">Không có đơn hàng nào</h4>
+                    <p class="text-muted">Hiện tại chưa có đơn hàng nào trong hệ thống.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#donHangTable').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Vietnamese.json"
+                },
+                "order": [[2, "desc"]]
+            });
+        });
+    </script>
+} 

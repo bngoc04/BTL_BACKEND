@@ -1,0 +1,137 @@
+@model WebFood.Models.ViewModels.DoiMatKhauViewModel
+
+@{
+    ViewData["Title"] = "Đổi mật khẩu";
+}
+
+<div class="container py-5 animate__animated animate__fadeIn">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4 border-0 shadow hover-grow">
+                <div class="card-header bg-gradient-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-person-circle me-2"></i> Tài khoản</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a asp-controller="Account" asp-action="ThongTinCaNhan" class="list-group-item list-group-item-action">
+                        <i class="bi bi-person-circle me-2"></i> Thông tin cá nhân
+                    </a>
+                    <a asp-controller="Account" asp-action="ChinhSuaThongTin" class="list-group-item list-group-item-action">
+                        <i class="bi bi-pencil-square me-2"></i> Chỉnh sửa thông tin
+                    </a>
+                    <a asp-controller="Account" asp-action="DoiMatKhau" class="list-group-item list-group-item-action active">
+                        <i class="bi bi-key me-2"></i> Đổi mật khẩu
+                    </a>
+                    @if (User.IsInRole("KhachHang"))
+                    {
+                        <a asp-controller="DonHang" asp-action="LichSuDonHang" class="list-group-item list-group-item-action">
+                            <i class="bi bi-clock-history me-2"></i> Lịch sử đơn hàng
+                        </a>
+                        <a asp-controller="DatBan" asp-action="LichSuDatBan" class="list-group-item list-group-item-action">
+                            <i class="bi bi-calendar-check me-2"></i> Lịch sử đặt bàn
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="card border-0 shadow hover-grow">
+                <div class="card-header bg-gradient-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-key me-2"></i> Đổi mật khẩu</h5>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-md-4 text-center mb-4 mb-md-0">
+                            <div class="avatar-placeholder bg-primary-light rounded-circle d-flex align-items-center justify-content-center mb-3 animate__animated animate__pulse animate__infinite animate__slow" style="width: 150px; height: 150px; margin: 0 auto;">
+                                <i class="bi bi-shield-lock text-primary" style="font-size: 5rem;"></i>
+                            </div>
+                            <div class="mt-3">
+                                <h6 class="fw-bold">Bảo mật tài khoản</h6>
+                                <p class="text-muted small">Thay đổi mật khẩu thường xuyên để bảo vệ tài khoản của bạn</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="alert alert-info mb-4 animate__animated animate__fadeIn">
+                                <div class="d-flex">
+                                    <i class="bi bi-info-circle fs-4 me-3"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Lưu ý khi đổi mật khẩu</h6>
+                                        <ul class="mb-0 ps-3">
+                                            <li>Mật khẩu phải có ít nhất 6 ký tự</li>
+                                            <li>Nên kết hợp chữ cái, số và ký tự đặc biệt</li>
+                                            <li>Không sử dụng thông tin cá nhân dễ đoán</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <form asp-action="DoiMatKhau" method="post" class="animate__animated animate__fadeIn">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                
+                                <div class="mb-4">
+                                    <label asp-for="MatKhauHienTai" class="form-label fw-semibold">
+                                        <i class="bi bi-key me-2 text-primary"></i>Mật khẩu hiện tại
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="bi bi-lock"></i></span>
+                                        <input asp-for="MatKhauHienTai" class="form-control form-control-lg" placeholder="Nhập mật khẩu hiện tại" />
+                                    </div>
+                                    <span asp-validation-for="MatKhauHienTai" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label asp-for="MatKhauMoi" class="form-label fw-semibold">
+                                        <i class="bi bi-key-fill me-2 text-primary"></i>Mật khẩu mới
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="bi bi-lock-fill"></i></span>
+                                        <input asp-for="MatKhauMoi" class="form-control form-control-lg" placeholder="Nhập mật khẩu mới" />
+                                    </div>
+                                    <span asp-validation-for="MatKhauMoi" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label asp-for="XacNhanMatKhau" class="form-label fw-semibold">
+                                        <i class="bi bi-check-circle me-2 text-primary"></i>Xác nhận mật khẩu
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="bi bi-check-lg"></i></span>
+                                        <input asp-for="XacNhanMatKhau" class="form-control form-control-lg" placeholder="Xác nhận mật khẩu mới" />
+                                    </div>
+                                    <span asp-validation-for="XacNhanMatKhau" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between mt-4">
+                                    <a asp-action="ThongTinCaNhan" class="btn btn-outline-secondary">
+                                        <i class="bi bi-arrow-left me-2"></i> Quay lại
+                                    </a>
+                                    <button type="submit" class="btn btn-primary animate__animated animate__pulse animate__infinite animate__slower">
+                                        <i class="bi bi-shield-check me-2"></i> Cập nhật mật khẩu
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function() {
+            // Add hover effect to buttons
+            $('.btn').addClass('hover-grow');
+            
+            // Add focus effect to form controls
+            $('.form-control').focus(function() {
+                $(this).parent().addClass('animate__animated animate__pulse');
+            }).blur(function() {
+                $(this).parent().removeClass('animate__animated animate__pulse');
+            });
+            
+            // Password strength indicator could be added here
+        });
+    </script>
+} 

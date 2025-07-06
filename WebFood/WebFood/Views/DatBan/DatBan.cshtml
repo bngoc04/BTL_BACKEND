@@ -1,0 +1,79 @@
+@model WebFood.Models.DatBan
+
+@{
+    ViewData["Title"] = "Đặt bàn";
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Đặt bàn - @Model.BanAn?.TenBan</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Thông tin bàn</h5>
+                                    <p><strong>Tên bàn:</strong> @Model.BanAn?.TenBan</p>
+                                    <p><strong>Số chỗ ngồi:</strong> @Model.BanAn?.SoLuongChoNgoi người</p>
+                                    <p><strong>Mô tả:</strong> @Model.BanAn?.MoTa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lưu ý</h5>
+                                    <p>- Vui lòng đến đúng giờ đã đặt</p>
+                                    <p>- Bàn sẽ được giữ trong vòng 15 phút</p>
+                                    <p>- Liên hệ hotline nếu có thay đổi: 0909 123 456</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form asp-action="DatBan" method="post">
+                        <input type="hidden" asp-for="BanAnId" />
+                        
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="NgayGioDat" class="form-label">Ngày giờ đặt</label>
+                            <input asp-for="NgayGioDat" class="form-control" type="datetime-local" min="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" />
+                            <span asp-validation-for="NgayGioDat" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="SoLuongKhach" class="form-label">Số lượng khách</label>
+                            <input asp-for="SoLuongKhach" class="form-control" min="1" max="@Model.BanAn?.SoLuongChoNgoi" />
+                            <span asp-validation-for="SoLuongKhach" class="text-danger"></span>
+                            <div class="form-text">Tối đa @Model.BanAn?.SoLuongChoNgoi người</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="GhiChu" class="form-label">Ghi chú</label>
+                            <textarea asp-for="GhiChu" class="form-control" rows="3" placeholder="Yêu cầu đặc biệt, món ăn yêu thích..."></textarea>
+                            <span asp-validation-for="GhiChu" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-calendar-check"></i> Xác nhận đặt bàn
+                            </button>
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Quay lại danh sách bàn
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

@@ -1,0 +1,68 @@
+@model IEnumerable<WebFood.Models.BanAn>
+
+@{
+    ViewData["Title"] = "Quản lý bàn";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Quản lý bàn</h1>
+        <a asp-controller="NhanVien" asp-action="DanhSachDatBan" class="btn btn-primary">
+            <i class="bi bi-calendar-check"></i> Danh sách đặt bàn
+        </a>
+    </div>
+
+    <div class="row">
+        @foreach (var ban in Model)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 @(ban.DaDat ? "border-danger" : "border-success")">
+                    <div class="card-header @(ban.DaDat ? "bg-danger text-white" : "bg-success text-white")">
+                        <h5 class="mb-0">@ban.TenBan</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><strong>Số chỗ ngồi:</strong> @ban.SoLuongChoNgoi người</p>
+                        <p class="card-text"><strong>Mô tả:</strong> @ban.MoTa</p>
+                        <p class="card-text">
+                            <strong>Trạng thái:</strong>
+                            @if (ban.DaDat)
+                            {
+                                <span class="badge bg-danger">Đã đặt</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success">Còn trống</span>
+                            }
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-grid gap-2">
+                            <a asp-action="DatMon" asp-route-soBan="@ban.BanAnId" class="btn btn-primary">
+                                <i class="bi bi-cart-plus"></i> Đặt món
+                            </a>
+                            <a asp-action="XemHoaDon" asp-route-soBan="@ban.BanAnId" class="btn btn-info">
+                                <i class="bi bi-receipt"></i> Xem hóa đơn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Hiệu ứng khi hover vào card
+            $(".card").hover(
+                function () {
+                    $(this).addClass("shadow-lg").css('cursor', 'pointer');
+                },
+                function () {
+                    $(this).removeClass("shadow-lg");
+                }
+            );
+        });
+    </script>
+} 

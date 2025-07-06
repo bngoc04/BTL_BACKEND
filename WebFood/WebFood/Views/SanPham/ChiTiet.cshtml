@@ -1,0 +1,79 @@
+@model WebFood.Models.SanPham
+
+@{
+    ViewData["Title"] = Model.Ten;
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a asp-controller="SanPham" asp-action="Index">Thực đơn</a></li>
+            @if (Model.DanhMuc != null)
+            {
+                <li class="breadcrumb-item"><a asp-controller="SanPham" asp-action="Index" asp-route-danhMucId="@Model.DanhMucId">@Model.DanhMuc.Ten</a></li>
+            }
+            <li class="breadcrumb-item active" aria-current="page">@Model.Ten</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5">
+                    @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                    {
+                        <img src="@Model.HinhAnh" class="img-fluid rounded" alt="@Model.Ten">
+                    }
+                    else
+                    {
+                        <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="@Model.Ten">
+                    }
+                </div>
+                <div class="col-md-7">
+                    <h2>@Model.Ten</h2>
+                    
+                    @if (Model.DanhMuc != null)
+                    {
+                        <p class="text-muted">
+                            <span class="badge bg-primary">@Model.DanhMuc.Ten</span>
+                        </p>
+                    }
+                    
+                    <p class="fs-4 text-danger fw-bold">@Model.Gia.ToString("N0") VNĐ</p>
+                    
+                    <div class="mb-4">
+                        <h5>Mô tả:</h5>
+                        <p>@(string.IsNullOrEmpty(Model.MoTa) ? "Không có mô tả" : Model.MoTa)</p>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <span class="badge bg-@(Model.ConHang ? "success" : "danger")">
+                            @(Model.ConHang ? "Còn hàng" : "Hết hàng")
+                        </span>
+                    </div>
+                    
+                    @if (Model.ConHang)
+                    {
+                        <form asp-controller="SanPham" asp-action="ThemVaoGioHang" method="post" class="d-flex align-items-center">
+                            <input type="hidden" name="sanPhamId" value="@Model.Id" />
+                            <div class="input-group me-3" style="width: 150px;">
+                                <span class="input-group-text">Số lượng</span>
+                                <input type="number" name="soLuong" class="form-control" value="1" min="1" max="10">
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-cart-plus"></i> Thêm vào giỏ
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <button class="btn btn-secondary" disabled>
+                            <i class="bi bi-cart-plus"></i> Hết hàng
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

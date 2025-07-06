@@ -1,0 +1,55 @@
+@model WebFood.Models.DatBan
+
+@{
+    ViewData["Title"] = "Hủy đặt bàn";
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">Xác nhận hủy đặt bàn</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <h5 class="alert-heading">Bạn có chắc chắn muốn hủy đặt bàn này?</h5>
+                        <p>Hành động này không thể hoàn tác. Vui lòng xác nhận lại thông tin trước khi hủy.</p>
+                    </div>
+
+                    <h5>Thông tin đặt bàn</h5>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4">Bàn:</dt>
+                        <dd class="col-sm-8">@Model.BanAn?.TenBan</dd>
+                        
+                        <dt class="col-sm-4">Số chỗ ngồi:</dt>
+                        <dd class="col-sm-8">@Model.BanAn?.SoLuongChoNgoi người</dd>
+                        
+                        <dt class="col-sm-4">Ngày giờ đặt:</dt>
+                        <dd class="col-sm-8">@Model.NgayGioDat.ToString("dd/MM/yyyy HH:mm")</dd>
+                        
+                        <dt class="col-sm-4">Số lượng khách:</dt>
+                        <dd class="col-sm-8">@Model.SoLuongKhach người</dd>
+                        
+                        <dt class="col-sm-4">Ghi chú:</dt>
+                        <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.GhiChu) ? "Không có" : Model.GhiChu)</dd>
+                    </dl>
+
+                    <form asp-action="HuyDatBan" method="post" class="mt-4">
+                        <input type="hidden" asp-for="DatBanId" />
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="bi bi-x-circle"></i> Xác nhận hủy đặt bàn
+                            </button>
+                            <a asp-action="ChiTiet" asp-route-id="@Model.DatBanId" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,513 @@
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\appsettings.Development.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\appsettings.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\WebFood.staticwebassets.runtime.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\WebFood.staticwebassets.endpoints.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\WebFood.exe
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\WebFood.deps.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\WebFood.runtimeconfig.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\WebFood.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\WebFood.pdb
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Azure.Core.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Azure.Identity.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Humanizer.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Build.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.Common.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.Configuration.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.Frameworks.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.LibraryModel.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.Packaging.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.ProjectModel.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.Protocol.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\NuGet.Versioning.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.CodeDom.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Memory.Data.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\af\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ar\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\az\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\bg\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\da\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\el\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fa\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\he\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\hr\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\hu\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\hy\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\id\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\is\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ku\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\lv\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\mt\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\nb\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\nl\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ro\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\sk\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\sl\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\sr\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\sv\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\uk\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\vi\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.csproj.AssemblyReference.cache
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.GeneratedMSBuildEditorConfig.editorconfig
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.AssemblyInfoInputs.cache
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.AssemblyInfo.cs
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.csproj.CoreCompileInputs.cache
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.MvcApplicationPartsAssemblyInfo.cache
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.RazorAssemblyInfo.cache
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.RazorAssemblyInfo.cs
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\scopedcss\bundle\WebFood.styles.css
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\scopedcss\projectbundle\WebFood.bundle.scp.css
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.build.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.development.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.csproj.Up2Date
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\refint\WebFood.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.pdb
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\WebFood.genruntimeconfig.cache
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\ref\WebFood.dll
+D:\LẬP TRÌNH BACK END\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\WebFood\WebFood\bin\Debug\net8.0\WebFood.exe
+D:\WebFood\WebFood\bin\Debug\net8.0\WebFood.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\appsettings.Development.json
+D:\WebFood\WebFood\bin\Debug\net8.0\appsettings.json
+D:\WebFood\WebFood\bin\Debug\net8.0\WebFood.staticwebassets.runtime.json
+D:\WebFood\WebFood\bin\Debug\net8.0\WebFood.staticwebassets.endpoints.json
+D:\WebFood\WebFood\bin\Debug\net8.0\Azure.Core.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Azure.Identity.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Humanizer.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Build.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.Common.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.Configuration.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.Frameworks.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.LibraryModel.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.Packaging.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.ProjectModel.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.Protocol.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\NuGet.Versioning.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.CodeDom.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Memory.Data.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\af\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ar\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\az\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\bg\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\da\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\el\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fa\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\he\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\hr\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\hu\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\hy\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\id\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\is\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ku\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\lv\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\mt\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\nb\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\nl\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ro\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\sk\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\sl\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\sr\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\sv\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\uk\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\vi\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\WebFood\WebFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.csproj.AssemblyReference.cache
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.AssemblyInfoInputs.cache
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.AssemblyInfo.cs
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.csproj.CoreCompileInputs.cache
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.MvcApplicationPartsAssemblyInfo.cache
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.RazorAssemblyInfo.cache
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.RazorAssemblyInfo.cs
+D:\WebFood\WebFood\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\WebFood\WebFood\obj\Debug\net8.0\scopedcss\bundle\WebFood.styles.css
+D:\WebFood\WebFood\obj\Debug\net8.0\scopedcss\projectbundle\WebFood.bundle.scp.css
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.build.json
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.development.json
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets\msbuild.WebFood.Microsoft.AspNetCore.StaticWebAssets.props
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets\msbuild.WebFood.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets\msbuild.build.WebFood.props
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebFood.props
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebFood.props
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.pack.json
+D:\WebFood\WebFood\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.csproj.Up2Date
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.dll
+D:\WebFood\WebFood\obj\Debug\net8.0\refint\WebFood.dll
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.pdb
+D:\WebFood\WebFood\bin\Debug\net8.0\WebFood.deps.json
+D:\WebFood\WebFood\bin\Debug\net8.0\WebFood.runtimeconfig.json
+D:\WebFood\WebFood\bin\Debug\net8.0\WebFood.pdb
+D:\WebFood\WebFood\obj\Debug\net8.0\WebFood.genruntimeconfig.cache
+D:\WebFood\WebFood\obj\Debug\net8.0\ref\WebFood.dll
