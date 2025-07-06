@@ -44,21 +44,21 @@ Tích hợp thanh toán: Kết nối với các cổng thanh toán
 Tích hợp email: Gửi email thông báo, xác nhận
 
 <p align="center">
-        <img src="Screenshot 2025-07-06 132048" alt="Dăng ký" width="600"/>
+        <img src="Screenshot 2025-07-06 132048.png" alt="Dăng ký" width="600"/>
     </p>
 
 <p align="center">
-        <img src="Screenshot 2025-07-06 132107" alt="Dăng nhap" width="600"/>
+        <img src="Screenshot 2025-07-06 132107.png" alt="Dăng nhap" width="600"/>
     </p>
 
 <p align="center">
-        <img src="Screenshot 2025-07-06 132223" alt="Trang chủ" width="600"/>
+        <img src="Screenshot 2025-07-06 132223.png" alt="Trang chủ" width="600"/>
     </p>
 
 <p align="center">
-        <img src="Screenshot 2025-07-06 135057" alt="Trang chủ" width="600"/>
+        <img src="Screenshot 2025-07-06 135057.png" alt="Trang chủ" width="600"/>
     </p>
 
 <p align="center">
-        <img src="Screenshot 2025-07-06 135840" alt="Trang chủ" width="600"/>
+        <img src="Screenshot 2025-07-06 135840.png" alt="Trang chủ" width="600"/>
     </p>
